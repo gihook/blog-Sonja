@@ -2,8 +2,8 @@
 
 {% block content %}
 	{% for post in posts %}
-	<div>
-		<p>published: {{ post.published_date }}</p>
+	<div class="post-div">
+		<p>Objavljeno: {{ post.published_date }}</p>
 		<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 		<p>{{ post.text|linebreaks }}</p>
 	</div>
